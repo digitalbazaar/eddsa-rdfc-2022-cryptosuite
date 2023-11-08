@@ -4,7 +4,7 @@
 [![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/eddsa-rdfc-2022-cryptosuite)](https://codecov.io/gh/digitalbazaar/eddsa-rdfc-2022-cryptosuite)
 [![NPM Version](https://img.shields.io/npm/v/@digitalbazaar/eddsa-rdfc-2022-cryptosuite.svg)](https://npm.im/@digitalbazaar/eddsa-rdfc-2022-cryptosuite)
 
-> Eddsa 2022 Data Integrity Cryptosuite for use with jsonld-signatures.
+> EdDSA 2022 Data Integrity Cryptosuite for use with jsonld-signatures.
 
 ## Table of Contents
 
@@ -54,7 +54,7 @@ a verifiable credential using this library:
 ```javascript
 import * as Ed25519Multikey from '@digitalbazaar/ed25519-multikey';
 import {DataIntegrityProof} from '@digitalbazaar/data-integrity';
-import {cryptosuite as eddsa2022CryptoSuite} from
+import {cryptosuite as eddsaRdfc2022CryptoSuite} from
   '@digitalbazaar/eddsa-rdfc-2022-cryptosuite';
 import jsigs from 'jsonld-signatures';
 const {purposes: {AssertionProofPurpose}} = jsigs;
@@ -108,7 +108,7 @@ addDocumentToLoader({url: controllerDoc.id, document: controllerDoc});
 
 // create suite
 const suite = new DataIntegrityProof({
-  signer: keyPair.signer(), cryptosuite: eddsa2022CryptoSuite
+  signer: keyPair.signer(), cryptosuite: eddsaRdfc2022CryptoSuite
 });
 
 // create signed credential
@@ -166,4 +166,4 @@ Digital Bazaar: support@digitalbazaar.com
 
 ## License
 
-[New BSD License (3-clause)](LICENSE) © 2022 Digital Bazaar
+[New BSD License (3-clause)](LICENSE) © 2023 Digital Bazaar

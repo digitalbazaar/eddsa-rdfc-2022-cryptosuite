@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2023 Digital Bazaar, Inc. All rights reserved.
  */
 export const controller = 'https://example.edu/issuers/565049';
 
