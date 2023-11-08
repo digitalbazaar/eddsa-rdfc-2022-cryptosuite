@@ -126,7 +126,7 @@ const signedCredential = await jsigs.sign(unsignedCredential, {
       "AlumniCredential": "https://schema.org#AlumniCredential",
       "alumniOf": "https://schema.org#alumniOf"
     },
-    "https://w3id.org/security/data-integrity/v1"
+    "https://w3id.org/security/data-integrity/v2"
   ],
   "id": "http://example.edu/credentials/1872",
   "type": [
