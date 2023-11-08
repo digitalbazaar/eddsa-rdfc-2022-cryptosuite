@@ -1,8 +1,8 @@
-# Eddsa 2022 Data Integrity Cryptosuite _(@digitalbazaar/eddsa-2022-cryptosuite)_
+# EdDSA RDFC 2022 Data Integrity Cryptosuite _(@digitalbazaar/eddsa-rdfc-2022-cryptosuite)_
 
-[![Build status](https://img.shields.io/github/workflow/status/digitalbazaar/eddsa-2022-cryptosuite/Node.js%20CI)](https://github.com/digitalbazaar/eddsa-2022-cryptosuite/actions?query=workflow%3A%22Node.js+CI%22)
-[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/eddsa-2022-cryptosuite)](https://codecov.io/gh/digitalbazaar/eddsa-2022-cryptosuite)
-[![NPM Version](https://img.shields.io/npm/v/@digitalbazaar/eddsa-2022-cryptosuite.svg)](https://npm.im/@digitalbazaar/eddsa-2022-cryptosuite)
+[![Build status](https://img.shields.io/github/actions/workflow/status/digitalbazaar/eddsa-rdfc-2022-cryptosuite/main.yml)](https://github.com/digitalbazaar/eddsa-rdfc-2022-cryptosuite/actions?query=workflow%3A%22Node.js+CI%22)
+[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/eddsa-rdfc-2022-cryptosuite)](https://codecov.io/gh/digitalbazaar/eddsa-rdfc-2022-cryptosuite)
+[![NPM Version](https://img.shields.io/npm/v/@digitalbazaar/eddsa-rdfc-2022-cryptosuite.svg)](https://npm.im/@digitalbazaar/eddsa-rdfc-2022-cryptosuite)
 
 > Eddsa 2022 Data Integrity Cryptosuite for use with jsonld-signatures.
 
@@ -35,14 +35,14 @@ TBD
 To install from NPM:
 
 ```
-npm install @digitalbazaar/eddsa-2022-cryptosuite
+npm install @digitalbazaar/eddsa-rdfc-2022-cryptosuite
 ```
 
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalbazaar/eddsa-2022-cryptosuite.git
-cd eddsa-2022-cryptosuite
+git clone https://github.com/digitalbazaar/eddsa-rdfc-2022-cryptosuite.git
+cd eddsa-rdfc-2022-cryptosuite
 npm install
 ```
 
@@ -55,7 +55,7 @@ a verifiable credential using this library:
 import * as Ed25519Multikey from '@digitalbazaar/ed25519-multikey';
 import {DataIntegrityProof} from '@digitalbazaar/data-integrity';
 import {cryptosuite as eddsa2022CryptoSuite} from
-  '@digitalbazaar/eddsa-2022-cryptosuite';
+  '@digitalbazaar/eddsa-rdfc-2022-cryptosuite';
 import jsigs from 'jsonld-signatures';
 const {purposes: {AssertionProofPurpose}} = jsigs;
 
@@ -143,7 +143,7 @@ const signedCredential = await jsigs.sign(unsignedCredential, {
     "type": "DataIntegrityProof",
     "created": "2022-09-06T12:33:46Z",
     "verificationMethod": "https://example.edu/issuers/565049#z6MkwXG2WjeQnNxSoynSGYU8V9j3QzP3JSqhdmkHc6SaVWoT",
-    "cryptosuite": "eddsa-2022",
+    "cryptosuite": "eddsa-rdfc-2022",
     "proofPurpose": "assertionMethod",
     "proofValue": "zT2U2xRCkXVPbkk4kKmemPa9zXSV7wfngQVq9uXjo3GgqZs6Te2NFLH8dRKQaqQfNhsGxEdmYkjJPy1EPkK67KnJ"
   }

@@ -30,7 +30,7 @@ describe('Eddsa2022Cryptosuite', () => {
   describe('exports', () => {
     it('it should have proper exports', async () => {
       should.exist(eddsa2022CryptoSuite);
-      eddsa2022CryptoSuite.name.should.equal('eddsa-2022');
+      eddsa2022CryptoSuite.name.should.equal('eddsa-rdfc-2022');
       eddsa2022CryptoSuite.requiredAlgorithm.should.equal('Ed25519');
       eddsa2022CryptoSuite.canonize.should.be.a('function');
       eddsa2022CryptoSuite.createVerifier.should.be.a('function');
