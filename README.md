@@ -141,11 +141,11 @@ const signedCredential = await jsigs.sign(unsignedCredential, {
   },
   "proof": {
     "type": "DataIntegrityProof",
-    "created": "2022-09-06T12:33:46Z",
+    "created": "2022-09-06T21:29:24Z",
     "verificationMethod": "https://example.edu/issuers/565049#z6MkwXG2WjeQnNxSoynSGYU8V9j3QzP3JSqhdmkHc6SaVWoT",
     "cryptosuite": "eddsa-rdfc-2022",
     "proofPurpose": "assertionMethod",
-    "proofValue": "zT2U2xRCkXVPbkk4kKmemPa9zXSV7wfngQVq9uXjo3GgqZs6Te2NFLH8dRKQaqQfNhsGxEdmYkjJPy1EPkK67KnJ"
+    "proofValue": "z4uwHCobmxKqQfZb7i8QRnNR9J4TR6u4Wkm4DB3ms337gfSpL4UwhTD7KKdPjyAaVJQ4y896FEnB1Vz3uEz14jWoC"
   }
 }
 ```
