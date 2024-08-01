@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2023 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2023-2024 Digital Bazaar, Inc. All rights reserved.
  */
 import {expect} from 'chai';
 
@@ -38,7 +38,7 @@ describe('Eddsa2022Cryptosuite', () => {
   });
 
   describe('canonize()', () => {
-    it('should canonize using URDNA2015 w/ n-quads', async () => {
+    it('should canonize using RDFC-1.0 w/ n-quads', async () => {
       const unsignedCredential = {...credential};
 
       let result;
