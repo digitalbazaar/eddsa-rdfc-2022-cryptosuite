@@ -39,31 +39,3 @@ loader.addStatic(
     }
   }
 );
-
-// controller document for test vectors
-loader.addStatic(
-  'https://vc.example/issuers/5678',
-  {
-    '@context': [
-      'https://www.w3.org/ns/did/v1',
-      'https://w3id.org/security/multikey/v1'
-    ],
-    id: 'https://vc.example/issuers/5678',
-    assertionMethod: {
-      id: 'https://vc.example/issuers/5678#z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2',
-      type: 'Multikey',
-      controller: 'https://vc.example/issuers/5678',
-      publicKeyMultibase: 'z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2'
-    }
-  }
-);
-loader.addStatic(
-  'https://vc.example/issuers/5678#z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2',
-  {
-    '@context': 'https://w3id.org/security/multikey/v1',
-    id: 'https://vc.example/issuers/5678#z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2',
-    type: 'Multikey',
-    controller: 'https://vc.example/issuers/5678',
-    publicKeyMultibase: 'z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2'
-  }
-);
