@@ -21,11 +21,6 @@ describe('test vectors', () => {
     keyPair = await Ed25519Multikey.from(keyMaterial);
     keyPair.controller = `did:key:${keyPair.publicKeyMultibase}`;
     keyPair.id = `${keyPair.controller}#${keyPair.publicKeyMultibase}`;
-
-    // FIXME: test fixture should be updated to use `did:key`
-    keyPair.controller = 'https://vc.example/issuers/5678';
-    keyPair.id = keyPair.controller +
-      '#z6MkrJVnaZkeFzdQyMZu1cgjg7k1pZZ6pvBQ7XJPt4swbTQ2';
   });
 
   it('should create proof', async () => {
