@@ -1,5 +1,10 @@
 # @digitalbazaar/eddsa-rdfc-2022-cryptosuite Changelog
 
+## 1.2.0 - 2024-11-xx
+
+### Added
+- Add support for `@direction`.
+
 ## 1.1.0 - 2024-08-01
 
 ### Changed
