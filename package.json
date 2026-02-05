@@ -15,8 +15,8 @@
   ],
   "dependencies": {
     "@digitalbazaar/ed25519-multikey": "^1.0.0",
-    "jsonld": "^8.1.0",
-    "rdf-canonize": "^4.0.1"
+    "jsonld": "^9.0.0",
+    "rdf-canonize": "^5.0.0"
   },
   "devDependencies": {
     "@digitalbazaar/data-integrity": "^2.0.0",
@@ -33,7 +33,7 @@
     "eslint-config-digitalbazaar": "^5.0.1",
     "eslint-plugin-jsdoc": "^46.8.2",
     "eslint-plugin-unicorn": "^49.0.0",
-    "jsonld-signatures": "^11.2.1",
+    "jsonld-signatures": "^11.6.0",
     "karma": "^6.3.20",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.1.1",
