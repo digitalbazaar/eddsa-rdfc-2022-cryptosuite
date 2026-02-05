@@ -1,6 +1,6 @@
 # @digitalbazaar/eddsa-rdfc-2022-cryptosuite Changelog
 
-## 1.3.0 - 2026-02-xx
+## 1.3.0 - 2026-02-05
 
 - Update dependencies:
   - `jsonld@9`.
